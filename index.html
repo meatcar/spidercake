@@ -11,7 +11,10 @@
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
+
+
+  <script src="js/libs/less-1.3.0.min.js"></script>
+  <link rel="stylesheet/less" type="text/css" href="less/index.less">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
@@ -23,9 +26,11 @@
   <div role="main">
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span4">
+        <div class="span4" id="leftcol">
         </div>
-        <div class="span8">
+        <div class="span4" id="centercol">
+        </div>
+        <div class="span4" id="rightcol">
         </div>
       </div>
     </div>
@@ -35,19 +40,19 @@
   </footer>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/libs/backbone.js"></script>
+  <script src="js/libs/underscore-min.js"></script>
   <script src="js/libs/bootstrap.js"></script>
-
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
 
+<!--
   <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  </script> -->
 </body>
 </html>
