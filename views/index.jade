@@ -2,14 +2,26 @@ extends layout
 
 block content
   header
-    //h1= title
-  div#main(role="main")
-    div#container-fluid
-      div#row-fluid
-        div#leftcol.span4
-          p Welcome to #{title}
-        div#centercol.span4
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.brand(href="#") SpiderCake
+
+          form.navbar-search.pull-left(action="https://duckduckgo.com/")
+            input.search-query(
+              type="text",
+              name="q",
+              placeholder="Search DuckDuckGo")
+
+
+  #main(role="main")
+    #container-fluid
+      #row-fluid
+        #leftcol.span2.cell
+          include links
+        #centercol.span5.cell
           p YES VERY WELCOME!!
-        div#rightcol.span4
+        #rightcol.span5.cell
+          p VERY VERY VERY WELCOME
   footer
         

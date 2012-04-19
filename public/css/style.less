@@ -1,3 +1,23 @@
-body {
-    background-color: #EEE;
+.border-radius (@radius: 5px) {
+    border-radius:          @radius;
+    -webkit-border-radius:  @radius;
+    -moz-border-radius:     @radius;
 }
+body {
+    background: #EEE;
+    padding-top: 40px;
+}
+
+.cell {
+    background: #CCC;
+    padding: 10px;
+    .border-radius(5px);
+    margin-top: 10px;
+}
+
+.link {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
